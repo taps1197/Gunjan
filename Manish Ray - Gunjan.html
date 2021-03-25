@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://manishray.myportfolio.com/gunjan -->
+<html lang="en-US" class="wf-ftnk-n4-active wf-ftnk-n7-active wf-active" data-ol-has-click-handler=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="./Manish Ray - Gunjan_files/nr-1208.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="AUUM Platform">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Manish Ray - Gunjan">
+      <meta property="og:description" content="AUUM Platform">
+      <meta property="og:image" content="https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/8fb80f2f-1896-4775-9f68-27295b1df685_rwc_0x0x1800x597x1800.png?h=79f8a43b5bf134ef0dfab19692c096fd">
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC">
+      <link rel="stylesheet" href="./Manish Ray - Gunjan_files/main.css" type="text/css">
+      <link rel="stylesheet" href="./Manish Ray - Gunjan_files/85aee50f736b60bdf5cbf6458306bbaa1609004700.css" type="text/css">
+    <link rel="canonical" href="https://manishray.myportfolio.com/gunjan">
+      <title>AUUM Platform - Gunjan</title>
+    <script type="text/javascript" src="./Manish Ray - Gunjan_files/YIrMb7EFp3FSTlxLVhyN9-ZzbeGSRy6pXz0SToAqbuMfenIgfHYEBsJzwD9oFDIDWh4yFcZcZ2wDjRqk5eBKwcwDjDFRF2IXFQ9ujQ63ZRJUFAwkjhI3jRb-mkG0dW83da4XZcNC-Av0jhNlOfG0SY4zwKuh-AmaOcuoSeNkieZzde8zOcFzdPUlpWgzS1scdhUTdkoRdhXCSY4zwKuh-AmaOcuoSeNkieZzde8zOcFzdPJIZ1s0-kG4fJsm.js" async="" onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn(&#39;Typekit not loaded.&#39;);
+    }
+    "></script><style type="text/css">@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}</style>
+<style type="text/css"></style></head>
+  <body class="link-transition" data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="" data-ol-has-click-handler="">  <div class="page-background-video page-background-video-with-panel">
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="https://manishray.myportfolio.com/projects">My Projects</a></div>
+          </nav>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+                  <li>
+                    <a href="https://www.instagram.com/man_ray_leo/" target="_blank">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                      <g>
+                        <path d="M15,5.4c2.1,0,2.4,0,3.2,0c0.8,0,1.2,0.2,1.5,0.3c0.4,0.1,0.6,0.3,0.9,0.6c0.3,0.3,0.5,0.5,0.6,0.9
+                          c0.1,0.3,0.2,0.7,0.3,1.5c0,0.8,0,1.1,0,3.2s0,2.4,0,3.2c0,0.8-0.2,1.2-0.3,1.5c-0.1,0.4-0.3,0.6-0.6,0.9c-0.3,0.3-0.5,0.5-0.9,0.6
+                          c-0.3,0.1-0.7,0.2-1.5,0.3c-0.8,0-1.1,0-3.2,0s-2.4,0-3.2,0c-0.8,0-1.2-0.2-1.5-0.3c-0.4-0.1-0.6-0.3-0.9-0.6
+                          c-0.3-0.3-0.5-0.5-0.6-0.9c-0.1-0.3-0.2-0.7-0.3-1.5c0-0.8,0-1.1,0-3.2s0-2.4,0-3.2c0-0.8,0.2-1.2,0.3-1.5c0.1-0.4,0.3-0.6,0.6-0.9
+                          c0.3-0.3,0.5-0.5,0.9-0.6c0.3-0.1,0.7-0.2,1.5-0.3C12.6,5.4,12.9,5.4,15,5.4 M15,4c-2.2,0-2.4,0-3.3,0c-0.9,0-1.4,0.2-1.9,0.4
+                          c-0.5,0.2-1,0.5-1.4,0.9C7.9,5.8,7.6,6.2,7.4,6.8C7.2,7.3,7.1,7.9,7,8.7C7,9.6,7,9.8,7,12s0,2.4,0,3.3c0,0.9,0.2,1.4,0.4,1.9
+                          c0.2,0.5,0.5,1,0.9,1.4c0.4,0.4,0.9,0.7,1.4,0.9c0.5,0.2,1.1,0.3,1.9,0.4c0.9,0,1.1,0,3.3,0s2.4,0,3.3,0c0.9,0,1.4-0.2,1.9-0.4
+                          c0.5-0.2,1-0.5,1.4-0.9c0.4-0.4,0.7-0.9,0.9-1.4c0.2-0.5,0.3-1.1,0.4-1.9c0-0.9,0-1.1,0-3.3s0-2.4,0-3.3c0-0.9-0.2-1.4-0.4-1.9
+                          c-0.2-0.5-0.5-1-0.9-1.4c-0.4-0.4-0.9-0.7-1.4-0.9c-0.5-0.2-1.1-0.3-1.9-0.4C17.4,4,17.2,4,15,4L15,4L15,4z"></path>
+                        <path d="M15,7.9c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S17.3,7.9,15,7.9L15,7.9z M15,14.7c-1.5,0-2.7-1.2-2.7-2.7
+                          c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7C17.7,13.5,16.5,14.7,15,14.7L15,14.7z"></path>
+                        <path d="M20.2,7.7c0,0.5-0.4,1-1,1s-1-0.4-1-1s0.4-1,1-1S20.2,7.2,20.2,7.7L20.2,7.7z"></path>
+                      </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://youtube.com/ManishRay21" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 30 24" xml:space="preserve" class="icon"><path d="M26.15 16.54c0 0-0.22 1.57-0.9 2.26c-0.87 0.91-1.84 0.91-2.28 0.96C19.78 20 15 20 15 20 s-5.91-0.05-7.74-0.23c-0.51-0.09-1.64-0.07-2.51-0.97c-0.68-0.69-0.91-2.26-0.91-2.26s-0.23-1.84-0.23-3.68v-1.73 c0-1.84 0.23-3.68 0.23-3.68s0.22-1.57 0.91-2.26c0.87-0.91 1.83-0.91 2.28-0.96C10.22 4 15 4 15 4H15c0 0 4.8 0 8 0.2 c0.44 0.1 1.4 0.1 2.3 0.96c0.68 0.7 0.9 2.3 0.9 2.26s0.23 1.8 0.2 3.68v1.73C26.38 14.7 26.1 16.5 26.1 16.54z M12.65 8.56l0 6.39l6.15-3.18L12.65 8.56z"></path></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:work.rayleo@gmail.com">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                        <g>
+                          <path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z"></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <header class="site-header js-site-header js-fixed-nav" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+        <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="https://auum.in/">Contact</a>
+      </div>
+        </nav>
+        <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-text  ">
+              <a href="https://auum.in/" class="preserve-whitespace">AUUM Platform</a>
+
+          </div>
+        </div>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+
+        </div>
+        <div class="hamburger-click-area js-hamburger">
+          <div class="hamburger">
+          </div>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <main>
+  <div class="page-container" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content" data-context="pages" data-identity="id:p5fe7728b3d59ba36392621521879b96230f835e10c4caea5f8bed" data-hover-hint="pageHeader" data-hover-hint-id="p5fe7728b3d59ba36392621521879b96230f835e10c4caea5f8bed">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">Gunjan</h1>
+            <p class="description">AUUM Platform initailve</p>
+        </header>
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p5fe7728b3d59ba36392621521879b96230f835e10c4caea5f8bed">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 1800px;
+  float: center;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:left;" class="sub-title">OVERVIEW</div><div style="text-align:left;">Gunjan is a web-app for the college going peeps. For both the students and the admin, its a&nbsp;solution to skip long cumbersome leave forms!</div></div>
+</div>
+
+              
+              
+              
+              
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/b804dae3-4128-4468-9a9b-38260815291a.png?h=6545d61fc1358d8e82e2a7d6fb8eb0f9" data-ol-has-click-handler="">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Manish Ray - Gunjan_files/b804dae3-4128-4468-9a9b-38260815291a_rw_3840.png" width="3840" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/b804dae3-4128-4468-9a9b-38260815291a_rw_600.png?h=d558abe6d70c2cabbeae42f1c2a02e8c 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/b804dae3-4128-4468-9a9b-38260815291a_rw_1200.png?h=17595b25e061098e9cfc9bfe32b90af3 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/b804dae3-4128-4468-9a9b-38260815291a_rw_1920.png?h=c380b365f841094d18222672d61394da 1920w,https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/b804dae3-4128-4468-9a9b-38260815291a_rw_3840.png?h=31eb3fee7cb6ac741a824604008df91f 3840w," sizes="(max-width: 3840px) 100vw, 3840px">
+     </div>
+  
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="  padding-top: 5px;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 1485px;
+  float: center;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:left;" class="sub-title"><div style="text-align:left;" class="sub-title"><div class="sub-title">CHALLENGE</div><div><div><div>Who likes to fill up long forms by pen and paper?</div><div>No one! There must be a better way.</div><div>This was what a bunch of college students were going through in&nbsp;one of the&nbsp;premier institutes of&nbsp;India. The students had to fill up leave forms in order to take permission to leave the college premises. If this was not enough they had to manually fill their details and timings while leaving or entering the college. The college admins never gave a&nbsp;thought&nbsp;to deal with this nor they had any way of tracking students entering or leaving the premisies. This was a security blunder</div></div></div><div class="sub-title">SOLUTION</div><div><div><div>The aim was to run&nbsp;this whole system online.&nbsp;</div><div>As I discussed with students about their problems, I realized a clean and minimal&nbsp;approach was necessary. Two key features were important: portability and accessibility.</div><div>While students were the key part, the admins also played a major role. The admins wanted an easy way to manage forms and track no of students outside the premises.<br></div><div class="sub-title">FiNAL designs</div></div></div></div></div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 3840000000">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/41fac05b-0ad0-4ce3-9461-d31b2ce3d11d.png?h=a90c6174854d92825ba52001500193bd" data-ol-has-click-handler="">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Manish Ray - Gunjan_files/41fac05b-0ad0-4ce3-9461-d31b2ce3d11d_rw_3840.png" width="3840" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/41fac05b-0ad0-4ce3-9461-d31b2ce3d11d_rw_600.png?h=9e4a5aa8165a80a0b050b09068a1e5ba 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/41fac05b-0ad0-4ce3-9461-d31b2ce3d11d_rw_1200.png?h=c823659f0e326551b8c47b39795bf642 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/41fac05b-0ad0-4ce3-9461-d31b2ce3d11d_rw_1920.png?h=3c92c051814cf21af0bbbd4ce384b361 1920w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/41fac05b-0ad0-4ce3-9461-d31b2ce3d11d_rw_3840.png?h=31eafa2d7c33aa6e8d55a137c52004cb 3840w," sizes="(max-width: 3840px) 100vw, 3840px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 4262770158">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/8795adf0-5afc-452a-aeb2-9c6c8ddaec51.png?h=04eef01cba8a51ea8d01f1cb59831485" data-ol-has-click-handler="">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Manish Ray - Gunjan_files/8795adf0-5afc-452a-aeb2-9c6c8ddaec51_rw_3840.png" width="3840" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/8795adf0-5afc-452a-aeb2-9c6c8ddaec51_rw_600.png?h=febffe139bd12b6c9bd3eb8bfaea28ac 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/8795adf0-5afc-452a-aeb2-9c6c8ddaec51_rw_1200.png?h=ad7115dc62f0a8a539c6622f4b101e67 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/8795adf0-5afc-452a-aeb2-9c6c8ddaec51_rw_1920.png?h=4279ac38ddb9e91420996c54963b43f3 1920w,https://pro2-bar-s3-cdn-cf.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/8795adf0-5afc-452a-aeb2-9c6c8ddaec51_rw_3840.png?h=d9a39b1e2abb8011ffdcbd667a9c6026 3840w," sizes="(max-width: 3840px) 100vw, 3840px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p>ADMIN SIDE (Web)</p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              <div class="project-module module video project-module-video js-js-project-module" style="  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 1485px;
+  float: center;
+  clear: both;
+">
+    <div class="embed-dimensions" style="max-width: 1270px; max-height: 720px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 56.69%; position: relative; height: 0px;">
+        <iframe title="Video Player" class="embed-content" src="./Manish Ray - Gunjan_files/embed.html" frameborder="0" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/fa6ec025-c1f1-4271-a2ca-853d705f38a8.png?h=dc63fbd3601a505e2258f017f7888699" data-ol-has-click-handler="">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Manish Ray - Gunjan_files/fa6ec025-c1f1-4271-a2ca-853d705f38a8_rw_3840.png" width="3840" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/fa6ec025-c1f1-4271-a2ca-853d705f38a8_rw_600.png?h=47154999a00a69365cb4533c89f79820 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/fa6ec025-c1f1-4271-a2ca-853d705f38a8_rw_1200.png?h=c9c3357eb610b5ea2dc462acf874f93f 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/fa6ec025-c1f1-4271-a2ca-853d705f38a8_rw_1920.png?h=5e7881b928e77b0da636937918734acb 1920w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/2fee80e8-58c3-4f2e-a690-40de9c4cb73c/fa6ec025-c1f1-4271-a2ca-853d705f38a8_rw_3840.png?h=7c6ccf20186b7952ffecf2f94e024613 3840w," sizes="(max-width: 3840px) 100vw, 3840px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p>Student Side (App)</p></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="https://manishray.myportfolio.com/gunjan#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="https://manishray.myportfolio.com/gunjan#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                <div class="footer-text">
+                  ©2020 / ALL RIGHT RESERVED / Powered by <a href="http://portfolio.adobe.com/" target="_blank">AUUM Platform</a>
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":33,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p5fe7728b3d59ba36392621521879b96230f835e10c4caea5f8bed","theme":{"name":"marta"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="./Manish Ray - Gunjan_files/translations"></script>
+  <script type="text/javascript" src="./Manish Ray - Gunjan_files/main.js"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"><div data-slide-id="0" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./Manish Ray - Gunjan_files/b804dae3-4128-4468-9a9b-38260815291a.png"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
